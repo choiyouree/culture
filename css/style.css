@@ -1,0 +1,560 @@
+* { margin: 0 ; padding: 0;}
+a {text-decoration: none; display: block; color: #333;}
+li { list-style: none;}
+img {width:100%;}
+header, section, footer {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Vitro_core';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Vitro_core.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* body {
+    cursor: url(../img/cursor.png),auto;
+} */
+/* 모바일버전 */
+@media screen and (min-width:480px){
+
+
+
+    
+}
+
+/* pc버전 */
+@media screen and (min-width:1024px){
+    header {
+        width: 100vw;
+        height: 7vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        transition: all 0.5s;
+        
+        background-color: #fff;
+    }
+    .center {
+        width: 1512px;
+        margin: 0 auto;
+    }
+    header .header_wrap {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        transition: all 0.5s;
+    }
+    header .logo {
+        padding-top: 30px;
+        width: 15%;
+    }
+    header nav {
+        margin-top: 50px;
+        margin-left: 100px;
+        width: 70%;
+        z-index: 102;
+        display: block;
+    }
+    header nav > ul  {
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav >  ul > li {
+        position: relative;
+    }
+    header nav >  ul > li > a {
+        color: #333;
+        font-size: 0.9vw;
+        text-align: center;
+        padding: 10px 20px 50px;
+        text-decoration: none
+    }
+    header nav >  ul > li > a:hover {
+        font-weight: bolder;
+        color: #333;
+    }
+    
+    header nav >  ul > li > a:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 3px;
+        background-color: #053863;
+        margin-left:50%;
+        margin-top: 3px;
+        transition: all 0.5s;
+    }
+    nav ul li a:hover:after {
+        width:100%;
+        margin-left: 0;
+    }
+    header nav >  ul > li:hover > a:after {
+        width: 100%;
+        margin-left: 0;
+    }
+   
+    /* 서브메뉴 */
+    header nav .sub {
+        padding: 0.5vw;
+        display: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 43%;
+        border: 1px solid #ddd;
+        background-color: #fff;
+    }
+    
+    header nav .sub li a {
+        font-size: 0.6vw;
+        padding: 0.5vw;
+        letter-spacing: -1px;
+        margin-left: 0.5vw;
+        color: #333;
+        white-space: nowrap;
+        text-decoration: none
+    }
+    header nav .sub .sub_title a {
+        font-size: 0.8vw;
+        font-weight: bolder;
+        margin-left: 0;
+    }
+    header nav ul li:hover .sub {
+        display: block;
+    }
+    header nav .sub li a:hover {
+        color: #053863;
+    }
+    header nav ul li:hover > a {
+        font-weight: bolder;
+    }
+    header #navi nav{
+        display: none;
+    }
+    header .menu_btn { 
+        width: 3%;
+        display: block;
+        margin-top: 2.5vw;
+    }
+    /* s1 첫번째 섹션 */
+    section.s1 {
+        width: 100%;
+        height: 70vh;
+        flex-flow: row nowrap;
+    }
+    section.s1 h1 {
+        font-family: 'Vitro_core';
+        font-size: 4vw;
+        color: #e60430;
+        margin-top: 180px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+    }
+    section.s1 h1  > span {
+        color: #053863;
+        display: block;
+        font-family: 'Vitro_core';
+        font-size: 4vw;
+    }
+    section.s1 p {
+        font-size: 1.8vw;
+        font-weight: bolder;
+        color: #333;
+        margin-left: 40px;
+    }
+    section.s1 .more_btn a{
+        float: right;
+        margin-right: 5px;
+        border: 1px solid #333;
+        border-radius: 20px;
+        width: 10vw;
+        height: 3vw;
+        position: relative;
+        top: -3vw;
+        text-align: center;
+        font-size: 1.2vw;
+        line-height: 3vw;
+        text-decoration: none;
+        color: #333;
+    }
+    section.s1 .more_btn a:hover {
+        background-color: #053863;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+    /* s2 섹션 두번째 */
+    section.s2 .visual{
+        background-image:url(../img/main.JPG);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+    section.s2 .visual2 {
+        width: 100%;
+        height: 13vw;
+        background-color: #053863;
+    }   
+    section.s2 .visual2 h2 {
+        text-align: center;
+        color: #fff;
+        padding-top: 40px;
+    }
+    section.s2 .visual2 p {
+        text-align: center;
+        color: #fff;
+        display: block;
+        padding-top: 30px;
+    }
+    /* s3 섹션 3번째 */
+    section.s3 {
+        width: 100%;
+        height: 50vw;
+        float: left;
+    }
+    section.s3 .center .left {
+        background-image: url(../img/section3_1.JPG);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 830px;
+        height: 565px;
+        margin-top: 100px;
+        position: absolute;
+    }
+    section.s3 .center .left h3 {
+        color: #fff;
+        z-index: 100;
+        display: block;
+        position: relative;
+        margin-top: 500px;
+    }
+    section.s3 .center .right {
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 817px;
+        width: 750px;
+        height: 600px;
+    }
+    section.s3 .center .right ul li {
+        display: flex;
+        justify-content: space-between;
+        width: 330px;
+        height: 273px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    section.s3 .center .right h3 {
+        color: #333;
+        margin: 5px 0 0 10px;
+    }
+    section.s3 .center .right .i1 h3 {
+        color: #fff;
+        margin: 5px 0 0 10px;
+    }
+    section.s3 .center .right .i1 {
+        background-image: url(../img/section3_2.JPG);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        float: left;
+    }
+    section.s3 .center .right .i2 {
+        background-image: url(../img/section3_3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    section.s3 .center .right .i3 {
+        background-image: url(../img/section3_4.JPG);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        float: left;
+    }
+    section.s3 .center .right .i4 {
+        background-image: url(../img/section3_5.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rosybrown;
+    }
+    /* 마우스 오버하면 불투명한 검은 배경 내려오면서 더하기 버튼 */
+    section.s3 ul li {
+        position: relative;
+        overflow: hidden;
+    }
+    section.s3 ul li div {
+        position: absolute;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    section.s3 .des {
+        width: 100%;
+        padding: 85px;
+        box-sizing: border-box;
+        /* 패딩은 쓰고싶은데 크기는 잘 맞았으면 좋겟는데 할때 ㅆ느느것 */
+        text-align: center;
+        color: #fff;
+        line-height: 34px;
+        background-color: rgba(0,0,0,0.5);
+        top: 317px; 
+        /* 아래 317에서 */
+        transition: all 0.3s;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    section.s3 ul li:hover .des {
+        top: 0;
+    }
+    section.s3 ul li .des p {
+        font-size: 20px;
+        font-weight: bold;
+    
+    }
+    section.s3 ul li .des i {
+        padding: 20px;
+        border: 1px solid #fff;
+        border-radius: 100%;
+    }
+    section.s3 .center .left ul {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+    section.s3 .center .left ul li{
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+    section.s3 .center .left ul li h3 {
+        padding-left: 20px;
+    }
+    section.s3 .center .left ul li .des {
+        width: 100%;
+        height: 800px;
+        margin: 0;
+        padding:200px;
+        left: 0;
+        box-sizing: border-box;
+        /* 패딩은 쓰고싶은데 크기는 잘 맞았으면 좋겟는데 할때 ㅆ느느것 */
+        text-align: center;
+        color: #fff;
+        line-height: 34px;
+        background-color: rgba(0,0,0,0.5);
+        top: 600px; 
+        /* 아래 317에서 */
+        transition: all 0.3s;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    section.s3 .left ul li:hover .des {
+        top: 0;
+    }
+    /* s4 섹션4번째 */
+    section.s4 {
+        background-color: #ddd;
+        height: 48vw;
+    }
+    section.s4 .h1 {
+        margin: 40px 0 40px 0;
+        font-size: 2vw;
+        font-weight: bolder;
+    }
+    section.s4 .row {
+        box-sizing: border-box;
+    }
+    
+    section.s4 .s4_img {
+        width: 480px;
+        height: 480px;
+        margin: 3px;
+        overflow: hidden;
+    }
+    section.s4 .s4_img1 img {
+        width: 900px;
+    }
+    section.s4 .s4_img3 img {
+        width: 600px;
+    }
+    section.s4 .row .col-sm-4 h1 {
+        font-size: 1.5vw;
+        margin-top: 1vw;
+        font-weight: bolder;
+    }
+    section.s4 .row .col-sm-4 p {
+        font-size: 1.5;
+    }
+    section.s4 .row .col-sm-4 a {
+        border: 1px solid #333;
+        text-decoration: none;
+        color: #333;
+        background-color: #fff;
+        width: 10vw;
+        border-radius: 10px;
+        height: 2.5vw;
+        line-height: 2.5vw;
+        text-align: center;
+    }
+    section.s4 .row .col-sm-4 a:hover {
+        background-color: #053863;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+    /* s5 섹션5번째 */
+    section.s5 {
+        background-image: linear-gradient( rgba(0, 0, 3, 0.3), rgba(0, 0, 0, 0.8) ),url(../img/la.jpg);
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    section.s5 .s5_img {
+        background-image: url(../img/la_in.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 400px;
+        height: 100vh;
+        width: 500px;
+        top: -90px;
+        position: relative;
+        margin-left: 100px;
+    }
+    section.s5 .s5_txt {
+        width: 900px;
+        position: relative;
+        top: -180px;
+        float: left;
+    }
+    section.s5 .s5_txt p {
+        font-size: 0.8vw;
+        color: gold;
+    }
+    section.s5 .s5_txt h1 {
+        color: #fff;
+        font-size: 1.5vw;
+    }
+    section.s5 .s5_txt h2 {
+        font-size: 2.5vw;
+        color: #fff;
+    }
+    section.s5 .icon {
+        top: -800px;
+        bottom: 50px;
+        float: right;
+        position: relative;
+        margin-right: 100px;
+    }
+    section.s5 .icon ul li {
+        color: #fff;
+        width: 180px;
+        text-align: center;
+        font-weight: bolder;
+        position: relative;
+        padding: 30px;
+    }
+    section.s5 .icon ul li img {
+        width: 80px;
+        margin-top: 10px;
+    }
+    section.s5 .icon ul li a {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 50%;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    /* s6 섹션 여섯번째 */
+    section.s6 {
+        width: 100%;
+        height: 25vw;
+    }
+    section.s6 .s6_left {
+        margin-left: 50px;
+        float: left;
+    }
+    section.s6 .title {
+        border-bottom: 4px solid #053863;
+        width: 20vw;
+        display: flex;
+        width: 600px;
+        margin-top: 100px;
+    }
+    section.s6 .title h2 {
+        white-space: nowrap;
+        font-size: 1.5vw;
+        font-weight: bolder;
+        display: flex;
+        color: #333;
+    }
+    section.s6 .title p {
+        width: 60px;
+        margin-left: 400px;
+        font-size: 1vw;
+        color: #333;
+        white-space: nowrap;
+    }
+   
+    section.s6 .txt a {
+        text-decoration: none;
+        font-size: 1vw;
+        color: #333;
+        border-bottom: 2px solid #053863;
+        padding: 0.8vw;
+    }
+    section.s6 .txt span {
+        float: right;
+    }
+    
+    section.s6 .s6_right {
+        float: right;
+        margin-right: 50px;
+    }
+    footer {
+        background-color: #ddd;
+        display: flex;
+        height: 80px;
+    }
+    footer .center {
+        display: flex;
+    }
+    footer .logo {
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 10vw;
+    }
+    footer .ft_left {
+        margin-left: 20px;
+        font-size: 0.7vw;
+        margin-top: 30px;
+        line-height: 0.3vw;
+    }
+    footer .ft_right {
+        position: absolute;
+        right: 0;
+        width: 700px;
+        float: right;
+    }
+    footer .ft_right ul li {
+        float: left;
+        text-align: right;
+        
+    }
+    footer .ft_right ul li a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: #333;
+        font-size: 0.7vw;
+        margin-top: 15px;
+    }
+    footer .ft_right copyright{
+        font-size: 0.5vw;
+        
+    }
+}

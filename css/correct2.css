@@ -1,0 +1,112 @@
+* { margin: 0 ; padding: 0;}
+a {text-decoration: none; display: block; color: #333;}
+li { list-style: none;}
+img {width:100%;}
+header, section, footer {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Vitro_core';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Vitro_core.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* pc버전 */
+@media screen and (min-width:480px){
+    header {
+        width: 100vw;
+        height: 7vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        transition: all 0.5s;
+        
+        background-color: #fff;
+    }
+    .center {
+        width: 1512px;
+        margin: 0 auto;
+    }
+    header .header_wrap {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        transition: all 0.5s;
+    }
+    header .logo {
+        padding-top: 30px;
+        width: 15%;
+    }
+    header nav {
+        margin-top: 50px;
+        margin-left: 100px;
+        width: 80%;
+        z-index: 102;
+        display: block;
+    }
+    header nav > ul  {
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav >  ul > li {
+        width: 210px;
+    }
+    header nav >  ul > li > a {
+        color: #333;
+        font-size: 0.9vw;
+        text-align: center;
+        padding: 10px 20px 20px;
+        text-decoration: none
+    }
+    header nav >  ul > li > a:hover {
+        font-weight: bolder;
+        color: #333;
+    }
+    
+    header nav >  ul > li > a:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 3px;
+        background-color: #053863;
+        margin-left:50%;
+        margin-top: 3px;
+        transition: all 0.5s;
+    }
+    nav ul li a:hover:after {
+        width:100%;
+        margin-left: 0;
+    }
+    header nav >  ul > li:hover > a:after {
+        width: 100%;
+    }
+    .sub {
+        width: 185px;
+        border: 1px solid #333;
+    }
+    
+    .sub .sub_title > a{
+        font-size: 0.8vw;
+        font-weight: bold;
+        color: #333;
+        padding-bottom: 5px;
+    }
+    .menu {
+        width: 50px;
+    }
+}
+
+/* 모바일버전 */
+@media screen and (max-width:480px){
+
+}
+/* 모바일, pc 모두 적용 - bootstrap */
+section.s1 {
+    width: 100%;
+    /* height: 100vh; */
+    margin: 0 auto;
+}

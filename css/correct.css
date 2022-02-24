@@ -1,0 +1,230 @@
+* { margin: 0 ; padding: 0;}
+a {text-decoration: none; display: block; color: #333;}
+li { list-style: none;}
+img {width:100%;}
+header, section, footer {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Vitro_core';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Vitro_core.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* pc버전 */
+@media screen and (min-width:480px){
+    .center {
+        width: 1520px;
+        margin: 0 auto;
+        display: flex;
+        /* 행기준 줄바꿈 방지 */
+        justify-content: space-between;
+    }   
+    .logo {
+        width: 7vw;
+    }
+    .h_right {
+        width: 50vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    .h_right nav {
+        margin-top: 1vw;
+        width: 100vw;
+        display: block;
+        /* pc버전에서 보임 */
+
+    }
+    .h_right nav > ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    .h_right nav > ul > li {
+        position: relative;
+    }
+    .h_right nav > ul > li > a{
+        font-size: 14px;
+        text-align: center;
+        padding: 5px 20px;
+        position: relative;
+    }
+    .h_right nav > ul > li > a:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        left: 50%;
+        transition: all 0.3s;
+        background: royalblue;
+    }
+    .h_right nav > ul > li:hover > a:after {
+        width: 100%;
+        left: 0;
+    }
+    .h_right nav > ul > li:hover .sub {
+        display: block;
+    }
+    .h_right nav .sub {
+        padding: 20px;
+        border: 1px solid #ccc;
+        display: none;
+        position: absolute;
+        /* 왓다갓다하지 않음 */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .h_right nav .sub li a {
+        font-size: 14px;
+        color: #666;
+        padding: 10px;
+    }
+    .h_right nav .sub li a:hover {
+        font-weight: bold;
+        color: royalblue;
+    }
+    .h_right .menu {
+        margin-top: 1vw;
+    }
+    
+    section.s2 .center {
+        margin-top: 7vw;
+    }
+    section.s2 div div div div{
+        background-size:  cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        color: #fff;
+        box-sizing: border-box;
+        padding: 2wv;
+        letter-spacing: -1px;
+        margin: 0.3vw;
+    }
+    section.s2 div div div div h3 {
+        font-size: 1.2vw;
+    }
+    section.s2 .outsourcing {
+        background-image: url(../img/section3_1.JPG);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 34vw;
+        padding-top: 30vw;
+        width: 40vw;
+        display: flex;
+    }
+    .box_right {
+        display: flex;
+        flex-flow: row wrap;
+        /* 행기준 줄바꿈 허용 */
+        padding: 0;
+    }
+
+    section.s2 .box2 {
+        width: 48%;
+        height: 10vw;
+        background-image: url(../img/section3_2.JPG);
+    }
+    section.s2 .box3 {
+        width: 48%;
+        height: 10vw;
+        background-image: url(../img/section3_3.jpg);
+    }
+    section.s2 .box4 {
+        width: 48%;
+        height: 10vw;
+        background-image: url(../img/section3_4.JPG);
+    }
+    section.s2 .box5 {
+        width: 48%;
+        height: 10vw;
+        background-image: url(../img/section3_5.png);
+    }
+    section.s4 .zone {
+        position: relative; 
+        /* 자식객체 겹침 */
+        height: 30vw;
+    }
+    section.s4 .zone .zone_list {
+        /* 자식div3개 ruqclfEo dnlcl rlwnsdlehla, .zone_btn 과 겹침 */
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+    }
+    section.s4 .zone .zone_list div {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        /* 3개 div겹침 */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+        padding: 70vh 0 0 5vw;
+    }
+    section.s4 .zone .zone_list .zone1 {
+        background-image: url(../img/10.jpg);
+    }
+    section.s4 .zone .zone_list .zone2 {
+        background-image: url(../img/11.jpg);
+    }
+    section.s4 .zone .zone_list .zone3 {
+        background-image: url(../img/la.jpg);
+    }
+    section.s4 .zone .zone_list div h1 {
+        font-size: 5vw;
+    }
+    section.s4 .zone .zone_list div p {
+        font-size: 1.2vw;
+        font-weight: bold;
+        color: #fff;
+        padding-top: 30px;
+    }
+    section.s4 .zone .zone_btn {
+        position: absolute;
+        width: 10vw;
+        height: 10vw;
+        right: 10vw;
+        top: 14vw;
+    }
+    section.s4 .zone .zone_btn ul li {
+        text-align: center;
+        font-size: 0.7vw;
+    }
+    section.s4 .zone .zone_btn ul li a {
+        color: #333;
+        font-weight: bold;
+    }
+    /* 버튼에 마우스 오버하면 글자색 변경됨 */
+    section.s4 .zone .zone_btn ul li.active a {
+        color: #fff;
+    }
+    section.s5 {
+        width: 100%;
+        height: 100vh;
+    }
+    section.s5 .center {
+        margin: 8vw auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    
+}
+
+/* 모바일버전 */
+@media screen and (max-width:480px){
+
+}
+/* 모바일, pc 모두 적용 - bootstrap */
+section.s1 {
+    width: 100%;
+    /* height: 100vh; */
+    margin: 0 auto;
+}

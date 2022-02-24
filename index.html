@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>국가문화유산포털</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="img/favi.png" type="img/favicon">
+    <!-- 외부css연결 -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- 제이쿼리 라이브러리 연결 -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- 외부 js 연결 -->
+    <script src="js/correct2.js"></script>
+    <!-- awesome icon cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- 부트스트랩 5 css cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- 부트스트랩 5 js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="center">
+                <div class="header_wrap">
+                    <div class="logo">
+                        <a href="imdex.html">
+                            <img src="img/logo.png" alt="로고">
+                        </a>
+                    </div>
+                    <nav> <!-- pc버전 네비게이션 -->
+                        <ul>
+                            <li><a href="#">문화유산검색</a>
+                                <ul class="sub">
+                                    <li class="sub_title"><a href="#">문화재 검색</a></li>
+                                    <li><a href="#">문화재 검색</a></li>
+                                    <li><a href="#">문화재 종목별 검색</a></li>
+                                    <li><a href="#">우리지역 문화재</a></li>
+                                    <li><a href="#">유형분류</a></li>
+                                    <li><a href="#">문화재 안내판 검색</a></li>
+                                    <li><a href="#">커피 이야기</a></li>
+                                    <li class="sub_title"><a href="#">박물관 소장품</a></li>
+                                    <li class="sub_title"><a href="#">기록유산 원문</a></li>
+                                    <li><a href="#">종목별 검색</a></li>
+                                    <li><a href="#">유형별 검색</a></li>
+                                    <li><a href="#">시대별 검색</a></li>
+                                    <li><a href="#">형태별 검색</a></li>
+                                    <li><a href="#">시도별 검색</a></li>
+                                    <li><a href="#">원문 검색</a></li>
+                                    <li class="sub_title"><a href="#">문화재 정책 Q&A</a></li>
+                                    <li><a href="#">문화재, 이것이 궁금해요</a></li>
+                                    <li><a href="#">문화재행정, 이것이 궁금해요</a></li>
+                                    <li><a href="#">문화재행정기관에 대하여</a></li>
+                                    <li class="sub_title"><a href="#">간행물</a></li>
+                                    <li class="sub_title"><a href="#">용어사전</a></li>
+                                    <li class="sub_title"><a href="#">문화유산연구지식포털</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">궁궐·종묘</a>
+                                <ul class="sub">
+                                    <li class="sub_title"><a href="#">경복궁</a></li>
+                                    <li><a href="#">경복궁 소개</a></li>
+                                    <li><a href="#">경복궁 관람안내</a></li>
+                                    <li><a href="#">경복궁 이야기</a></li>
+                                    <li class="sub_title"><a href="#">종묘</a></li>
+                                    <li><a href="#">종묘 소개</a></li>
+                                    <li><a href="#">종묘 관람안내</a></li>
+                                    <li><a href="#">종묘 이야기</a></li>
+                                    <li class="sub_title"><a href="#">창덕궁</a></li>
+                                    <li><a href="#">창덕궁 소개</a></li>
+                                    <li><a href="#">창덕궁 관람안내</a></li>
+                                    <li><a href="#">창덕궁 이야기</a></li>
+                                    <li class="sub_title"><a href="#">궁궐 이야기</a></li>
+                                    <li><a href="#">궁궐의 역사</a></li>
+                                    <li><a href="#">궁궐의 연표</a></li>
+                                    <li><a href="#">궁궐의 자리</a></li>
+                                    <li><a href="#">궁궐의 짜임새</a></li>
+                                    <li><a href="#">궁궐의 건축</a></li>
+                                    <li><a href="#">궁궐의 지붕</a></li>
+                                    <li><a href="#">궁궐의 나무</a></li>
+                                    <li><a href="#">궁궐의 새</a></li>
+                                    <li class="sub_title"><a href="#">덕수궁</a></li>
+                                    <li><a href="#">덕수궁 소개</a></li>
+                                    <li><a href="#">덕수궁 관람안내</a></li>
+                                    <li><a href="#">덕수궁 이야기</a></li>
+                                    <li class="sub_title"><a href="#">창경궁</a></li>
+                                    <li><a href="#">창경궁 소개</a></li>
+                                    <li><a href="#">창경궁 관람안내</a></li>
+                                    <li><a href="#">창경궁 이야기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">조선왕릉</a>
+                                <ul class="sub">
+                                    <li class="sub_title"><a href="#">한눈에 보는 조선왕릉</a></li>
+                                    <li class="sub_title"><a href="#">조선왕실(선원계보)</a></li>
+                                    <li class="sub_title"><a href="#">그림으로 보는 국장행렬</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">기록유산</a>
+                                <ul class="sub">
+                                    <li class="sub_title"><a href="#">기록유산 알기</a></li>
+                                    <li><a href="#">기록유산 소개</a></li>
+                                    <li><a href="#">고전적</a></li>
+                                    <li><a href="#">고문서</a></li>
+                                    <li><a href="#">기록유산 영상</a></li>
+                                    <li class="sub_title"><a href="#">의궤정보</a></li>
+                                    <li><a href="#">의궤란 무엇인가</a></li>
+                                    <li><a href="#">소장기관</a></li>
+                                    <li><a href="#">규장각·장서각 의궤</a></li>
+                                    <li><a href="#">반차도</a></li>
+                                    <li class="sub_title"><a href="#">인장정보</a></li>
+                                    <li><a href="#">한국인장의 개요</a></li>
+                                    <li><a href="#">조선시대의 보인과 관인</a></li>
+                                    <li><a href="#">인장목록</a></li>
+                                    <li class="sub_title"><a href="#">활자정보</a></li>
+                                    <li><a href="#">각자</a></li>
+                                    <li><a href="#">목활자</a></li>
+                                    <li><a href="#">금속활자</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">유네스코 등재유산</a>
+                                <ul class="sub">
+                                    <li class="sub_title"><a href="#">유네스코 등재유산 소개</a></li>
+                                    <li class="sub_title"><a href="#">세계유산</a></li>
+                                    <li><a href="#">세계유산이란?</a></li>
+                                    <li><a href="#">한국의 세계유산</a></li>
+                                    <li class="sub_title"><a href="#">인류무형문화유산</a></li>
+                                    <li><a href="#">인류무형문화유산이란?</a></li>
+                                    <li><a href="#">한국의 인류무형문화유산</a></li>
+                                    <li class="sub_title"><a href="#">세계기록유산</a></li>
+                                    <li><a href="#">세계기록유산이란?</a></li>
+                                    <li><a href="#">한국의 세계기록유산</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">3D 문화유산</a>
+                                <ul class="sub">
+                                    <li class="sub_title"><a href="#">3D 문화유산 소개</a></li>
+                                    <li><a href="#">3D 문화유산 소개</a></li>
+                                    <li><a href="#">이용방법</a></li>
+                                    <li class="sub_title"><a href="#">주제별 3D 문화유산</a></li>
+                                    <li><a href="#">3D 영상으로 본 한국의 세계유산</a></li>
+                                    <li><a href="#">교과서 속 문화유산</a></li>
+                                    <li class="sub_title"><a href="#">3D 문화유산 검색</a></li>
+                                    <li><a href="#">3D 문화유산 검색</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">문화재청 사진관</a>
+                                <ul class="sub">
+                                    <li class="sub_title"><a href="#">문화재 행정의 발자취</a></li>
+                                    <li class="sub_title"><a href="#">우리가 사랑하는 문화유산</a></li>
+                                    <li class="sub_title"><a href="#">사진.CHA</a></li>
+                                    <li class="sub_title"><a href="#">전체사진</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- 서브메뉴 배경 -->
+                    <div class="sub1_bg"></div>
+                    <!-- 메뉴 햄버거 버튼 -->
+                    <div class="menu_btn">
+                        <a href="#"><img src="img/ham.png" alt="햄버거 메뉴"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="s1">
+            <div class="center">
+                <h1>KOREAN<span>CULTURAL HERITAGE</span></h1>
+                <p>우리나라의 소중한 문화 유산
+                    <br>문화재를 비롯한, 예술활동과 유산, 민속, 법, 습관, 생활양식  
+                    <br>본질을 표현하는 모든 것까지 최선을 다하여 지키고 보존합니다.
+                </p>
+                <div class="more_btn">
+                    <a href="#">MORE +</a>
+                </div>
+            </div>
+        </section>
+        <section class="s2">
+            <div class="visual"></div>
+            <div class="visual2">
+                <h2>The Best Korea</h2>
+                <p>지정·비지정문화재를 막론하고 모든 문화재는 
+                <br>우리의 소중한 문화유산으로 보존 및 보호에 최선을 다해야 할 것입니다.</p>
+            </div>
+        </section>
+        <section class="s3">
+            <div class="center">
+                <div class="left">
+                    <ul>
+                        <li><h3>문화재사진</h3>
+                            <div class="des">
+                                <p>더 알아보기</p>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li class="i1"><h3>유네스코 등재 유산</h3>
+                            <div class="des">
+                                <p>더 알아보기</p>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </li>
+                        <li class="i2"><h3>문화유산 간행물</h3>
+                            <div class="des">
+                                <p>더 알아보기</p>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </li>
+                        <li class="i3"><h3>3D 문화유산</h3>
+                            <div class="des">
+                                <p>더 알아보기</p>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </li>
+                        <li class="i4"><h3>문화제 궁금해요</h3>
+                            <div class="des">
+                                <p>더 알아보기</p>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="s4">
+            <div class="center">
+                <p class="h1">문화유산 이야기</p>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="s4_img s4_img1">
+                        <img src="../culture/img/bo_1.jpg" alt="궁궐이야기">
+                    </div>
+                    <h1>궁궐이야기</h1>
+                    <p>현재 서울에 남아있는 조선시대
+                        <br>5대 궁궐의 다양한 이야기</p>
+                    <a href="#">MORE +</a>
+                </div>
+                <div class="col-sm-4">
+                    <div class="s4_img s4_img2">
+                        <img src="../culture/img/bo_2.jpg" alt="문화유산이야기마당">
+                    </div>
+                    <h1>문화유산 이야기 마당</h1>
+                    <p>문화재 속에 숨어있는 저마다의 이야기
+                        <br>들을 알아봐요.</p>
+                    <a href="#">MORE +</a>
+                </div>
+                <div class="col-sm-4">
+                    <div class="s4_img s4_img3">
+                        <img src="../culture/img/bo_3.jpg" alt="여행이야기">
+                    </div>
+                    <h1>여행이야기</h1>
+                    <p>여행을 부르는 문화유산 답사기.
+                        <br>충남, 소박한 기원이 만든 신비한 공간</p>
+                    <a href="#">MORE +</a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="s5">
+            <div class="center">
+                <div class="s5_img">
+                </div>
+                <div class="s5_txt">
+                    <p>국가문화유산 포털</p>
+                    <h1>지역 문화재 찾아보기</h1>
+                    <h2>지역별 문화재를 보실 수 있습니다.</h2>
+                </div>
+                <div class="icon">
+                    <ul>
+                        <li><a href="#"><img src="img/la_icon.png" alt=""></a>
+                        <p>서울 / 수도권</p></li>
+                        <li><a href="#"><img src="img/la_icon.png" alt=""></a>
+                        <p>충청도 / 전라도</p></li>
+                        <li><a href="#"><img src="img/la_icon.png" alt=""></a>
+                        <p>제주도 / 독도</p></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="s6">
+            <div class="center">
+                <div class="s6_left">
+                    <div class="title">
+                        <h2>공지사항</h2>
+                        <p>more +</p>
+                    </div>
+                    <div class="txt">
+                        <a href="#">코로나 감염 예방 지침<span>2021.03</span></a>
+                        <a href="#">국가 문화유산 포털 고객센터 안내<span>2021.01</span></a>
+                    </div>
+                </div>
+                <div class="s6_right">
+                    <div class="title">
+                        <h2>채용공고</h2>
+                        <p>more +</p>
+                    </div>
+                    <div class="txt">
+                        <a href="#">지역별 봉사자 모집<span>2021.03</span></a>
+                        <a href="#">국가문화보존포털 직원 채용<span>2021.01</span></a>
+                        <a href="#">우리나라 문화재 체험학습 강사모집<span>2021.01</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="center">
+                <div class="logo">
+                    <img src="img/logo.png" alt="로고">
+                </div>
+                <div class="ft_left">
+                    <address>(우)35208 대전광역시 서구 청사로 189정부대전청사 1동 8-11층,2동 14층 문화재청</address>
+                    <p>고객지원센터 : ☎ 1600-0064</p>
+                </div>
+                <div class="ft_right">
+                    <ul>
+                        <li><a href="#">저작권 정책</a></li>
+                        <li><a href="#">사이트 오류신고</a></li>
+                    </ul>
+                    <br>
+                    <copyright>© 2000. CULTURAL HERITAGE ADMINISTRATION. ALL RIGHTS RESERVED.
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
